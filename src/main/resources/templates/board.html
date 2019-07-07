@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+ <form action="/" method="post">
+ 	<input type="text" name="message" />
+ 	<button type="submit">投稿</button>
+ </form>
+ <div th:each="message : ${messages}" th:text="${message}"></div>
+</body>
+</html>
